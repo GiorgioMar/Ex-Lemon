@@ -789,6 +789,81 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </deviceset>
 </devicesets>
 </library>
+<library name="con-weidmueller-sl35" urn="urn:adsk.eagle:library:199">
+<description>&lt;b&gt;Weidmueller Clamp Connectors&lt;/b&gt;&lt;p&gt;
+Type SL3.5&lt;p&gt; 
+Grid 3.5 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="180G-2" urn="urn:adsk.eagle:footprint:11175/1" library_version="1">
+<description>&lt;b&gt;WEIDMUELLER CLAMP CONNECTOR&lt;/b&gt;</description>
+<wire x1="-4.1" y1="3.4" x2="4.1" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="3.4" x2="4.1" y2="-4" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="-4" x2="-4.1" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-4.1" y1="-4" x2="-4.1" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="-2.625" y1="-3.85" x2="-2.625" y2="-2.975" width="0.2032" layer="21"/>
+<wire x1="-2.625" y1="-2.975" x2="-2.975" y2="-2.625" width="0.2032" layer="21"/>
+<wire x1="-2.975" y1="-2.625" x2="-3.85" y2="-2.625" width="0.2032" layer="21"/>
+<wire x1="-0.875" y1="-3.85" x2="-0.875" y2="-2.975" width="0.2032" layer="21"/>
+<wire x1="-0.875" y1="-2.975" x2="-0.525" y2="-2.625" width="0.2032" layer="21"/>
+<wire x1="-0.525" y1="-2.625" x2="0.525" y2="-2.625" width="0.2032" layer="21"/>
+<wire x1="0.525" y1="-2.625" x2="0.875" y2="-2.975" width="0.2032" layer="21"/>
+<wire x1="0.875" y1="-2.975" x2="0.875" y2="-3.85" width="0.2032" layer="21"/>
+<wire x1="2.625" y1="-3.85" x2="2.625" y2="-2.975" width="0.2032" layer="21"/>
+<wire x1="2.625" y1="-2.975" x2="2.975" y2="-2.625" width="0.2032" layer="21"/>
+<wire x1="2.975" y1="-2.625" x2="3.85" y2="-2.625" width="0.2032" layer="21"/>
+<pad name="1" x="-1.75" y="0" drill="1.4224" shape="long" rot="R90"/>
+<pad name="2" x="1.75" y="0" drill="1.4224" shape="long" rot="R90"/>
+<text x="-1.75" y="3.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.75" y="1.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="180G-2" urn="urn:adsk.eagle:package:11382/1" type="box" library_version="1">
+<description>WEIDMUELLER CLAMP CONNECTOR</description>
+<packageinstances>
+<packageinstance name="180G-2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MALE-2" urn="urn:adsk.eagle:symbol:11128/1" library_version="1">
+<text x="0" y="1.778" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.842" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="1.27" y2="0.254" layer="94"/>
+<rectangle x1="-0.254" y1="-2.794" x2="1.27" y2="-2.286" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="pin" length="short" direction="pas"/>
+<pin name="2" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="180G-2" urn="urn:adsk.eagle:component:11562/1" prefix="X" uservalue="yes" library_version="1">
+<description>&lt;b&gt;WEIDMUELLER CLAMP CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MALE-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="180G-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11382/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -810,11 +885,16 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="ARDUINO_UNO_R3" device="NO_HOLES" package3d_urn="urn:adsk.eagle:package:37331/1"/>
+<part name="X6" library="con-weidmueller-sl35" library_urn="urn:adsk.eagle:library:199" deviceset="180G-2" device="" package3d_urn="urn:adsk.eagle:package:11382/1"/>
+<part name="X7" library="con-weidmueller-sl35" library_urn="urn:adsk.eagle:library:199" deviceset="180G-2" device="" package3d_urn="urn:adsk.eagle:package:11382/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="15.24" y="170.18" size="6.4516" layer="91">sensori di luce</text>
+<text x="33.02" y="170.18" size="3.81" layer="91">sensori di luce</text>
+<text x="10.16" y="104.14" size="3.81" layer="91">Bumper</text>
+<text x="129.54" y="132.08" size="3.81" layer="91">Arduino Uno</text>
+<text x="53.34" y="104.14" size="3.81" layer="91">Sensori Ultrasuoni</text>
 </plain>
 <instances>
 <instance part="PH1" gate="G$1" x="5.08" y="134.62" smashed="yes">
@@ -857,9 +937,17 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <attribute name="NAME" x="84.836" y="149.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="87.884" y="149.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="B1" gate="G$1" x="157.48" y="58.42" smashed="yes">
-<attribute name="NAME" x="147.828" y="89.662" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="147.32" y="27.686" size="1.778" layer="96" font="vector" align="top-left"/>
+<instance part="B1" gate="G$1" x="144.78" y="96.52" smashed="yes">
+<attribute name="NAME" x="135.128" y="127.762" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="134.62" y="65.786" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="X6" gate="G$1" x="12.7" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="10.922" y="93.98" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="18.542" y="93.98" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X7" gate="G$1" x="25.4" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.622" y="93.98" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="31.242" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -877,8 +965,8 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="A1"/>
-<wire x1="144.78" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="142.24" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="132.08" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<label x="129.54" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="S2" class="0">
@@ -893,8 +981,8 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="A2"/>
-<wire x1="144.78" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
-<label x="142.24" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="132.08" y1="119.38" x2="129.54" y2="119.38" width="0.1524" layer="91"/>
+<label x="129.54" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="S3" class="0">
@@ -909,8 +997,8 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="A3"/>
-<wire x1="144.78" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
-<label x="142.24" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="132.08" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
+<label x="129.54" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="S4" class="0">
@@ -925,8 +1013,8 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="A4"/>
-<wire x1="144.78" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
-<label x="142.24" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="132.08" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
+<label x="129.54" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="S5" class="0">
@@ -941,8 +1029,8 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="A5"/>
-<wire x1="144.78" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
-<label x="142.24" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="132.08" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
+<label x="129.54" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -971,6 +1059,21 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <wire x1="86.36" y1="129.54" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="86.36" y="124.46" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="GND@2"/>
+<wire x1="132.08" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<label x="129.54" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X6" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="91.44" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="12.7" y="88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X7" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="91.44" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<label x="25.4" y="88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -998,13 +1101,101 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <wire x1="86.36" y1="154.94" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
 <label x="86.36" y="157.48" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="5V"/>
+<wire x1="132.08" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
+<label x="129.54" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="-7.62" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91" style="longdash"/>
-<wire x1="106.68" y1="111.76" x2="106.68" y2="182.88" width="0.1524" layer="91" style="longdash"/>
-<wire x1="106.68" y1="182.88" x2="-7.62" y2="182.88" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-7.62" y1="182.88" x2="-7.62" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="106.68" y1="111.76" x2="106.68" y2="139.7" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="111.76" x2="38.1" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="38.1" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="106.68" y1="63.5" x2="106.68" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<junction x="106.68" y="111.76"/>
+<wire x1="106.68" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91" style="longdash"/>
+<wire x1="182.88" y1="63.5" x2="182.88" y2="139.7" width="0.1524" layer="91" style="longdash"/>
+<wire x1="182.88" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="111.76" x2="-5.08" y2="78.74" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91" style="longdash"/>
+<wire x1="38.1" y1="78.74" x2="38.1" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<junction x="38.1" y="111.76"/>
+<wire x1="38.1" y1="78.74" x2="38.1" y2="63.5" width="0.1524" layer="91" style="longdash"/>
+<junction x="38.1" y="78.74"/>
+<wire x1="38.1" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91" style="longdash"/>
+<junction x="106.68" y="63.5"/>
+<wire x1="-5.08" y1="111.76" x2="-5.08" y2="177.8" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="177.8" x2="106.68" y2="177.8" width="0.1524" layer="91" style="longdash"/>
+<junction x="-5.08" y="111.76"/>
+<wire x1="106.68" y1="177.8" x2="106.68" y2="139.7" width="0.1524" layer="91" style="longdash"/>
+<junction x="106.68" y="139.7"/>
+</segment>
+</net>
+<net name="D1" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D1"/>
+<wire x1="157.48" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
+<label x="160.02" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X7" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<label x="27.94" y="88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D2"/>
+<wire x1="157.48" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<label x="160.02" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X6" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="91.44" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="15.24" y="88.9" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D3" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="*D3"/>
+<wire x1="157.48" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
+<label x="160.02" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D4" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D4"/>
+<wire x1="157.48" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="160.02" y="114.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D5" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="*D5"/>
+<wire x1="157.48" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
+<label x="160.02" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D6" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="*D6"/>
+<wire x1="157.48" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
+<label x="160.02" y="109.22" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D7" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D7"/>
+<wire x1="157.48" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
+<label x="160.02" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D8" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D8"/>
+<wire x1="157.48" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
+<label x="160.02" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
