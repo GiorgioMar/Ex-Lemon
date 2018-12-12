@@ -789,6 +789,136 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </deviceset>
 </devicesets>
 </library>
+<library name="con-garry" urn="urn:adsk.eagle:library:147">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;a href="www.mpe-connector.de"&gt;Menufacturer&lt;/a&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="332-02" urn="urn:adsk.eagle:footprint:6784/1" library_version="1">
+<description>&lt;b&gt;2 Pin - 2mm Dual Row&lt;/b&gt;&lt;p&gt;
+Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
+<wire x1="-0.85" y1="-1.9" x2="0.85" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="0.85" y1="-1.9" x2="0.85" y2="-0.4" width="0.2032" layer="21"/>
+<wire x1="0.85" y1="0.4" x2="0.85" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="0.85" y1="1.9" x2="-0.85" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-0.85" y1="1.9" x2="-0.85" y2="0.4" width="0.2032" layer="21"/>
+<wire x1="-0.85" y1="-0.4" x2="-0.85" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-0.85" y1="0.4" x2="-0.85" y2="-0.4" width="0.2032" layer="21" curve="-129.185"/>
+<wire x1="0.85" y1="-0.4" x2="0.85" y2="0.4" width="0.2032" layer="21" curve="-129.185"/>
+<pad name="1" x="0" y="-1" drill="0.9" diameter="1.27"/>
+<pad name="2" x="0" y="1" drill="0.9" diameter="1.27"/>
+<text x="-0.65" y="-1.75" size="0.3048" layer="21" font="vector">1</text>
+<text x="-0.62" y="-3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.62" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="-1.25" x2="0.25" y2="-0.75" layer="51"/>
+<rectangle x1="-0.25" y1="0.75" x2="0.25" y2="1.25" layer="51"/>
+</package>
+<package name="332-04" urn="urn:adsk.eagle:footprint:6786/1" library_version="1">
+<description>&lt;b&gt;4 Pin - 2mm Dual Row&lt;/b&gt;&lt;p&gt;
+Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
+<wire x1="-1.85" y1="-1.9" x2="1.85" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="1.85" y1="-1.9" x2="1.85" y2="-0.4" width="0.2032" layer="21"/>
+<wire x1="1.85" y1="0.4" x2="1.85" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="1.85" y1="1.9" x2="-1.85" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-1.85" y1="1.9" x2="-1.85" y2="0.4" width="0.2032" layer="21"/>
+<wire x1="-1.85" y1="-0.4" x2="-1.85" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-1.85" y1="0.4" x2="-1.85" y2="-0.4" width="0.2032" layer="21" curve="-129.185"/>
+<wire x1="1.85" y1="-0.4" x2="1.85" y2="0.4" width="0.2032" layer="21" curve="-129.185"/>
+<wire x1="-1" y1="1" x2="-1" y2="-6" width="0.55" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-6" width="0.55" layer="51"/>
+<pad name="1" x="-1" y="-1" drill="0.9" diameter="1.27"/>
+<pad name="2" x="-1" y="1" drill="0.9" diameter="1.27"/>
+<pad name="3" x="1" y="-1" drill="0.9" diameter="1.27"/>
+<pad name="4" x="1" y="1" drill="0.9" diameter="1.27"/>
+<text x="-1.65" y="-1.75" size="0.3048" layer="21" font="vector">1</text>
+<text x="-1.62" y="2.19" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.62" y="3.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.25" y1="-1.25" x2="-0.75" y2="-0.75" layer="51"/>
+<rectangle x1="-1.25" y1="0.75" x2="-0.75" y2="1.25" layer="51"/>
+<rectangle x1="0.75" y1="-1.25" x2="1.25" y2="-0.75" layer="51"/>
+<rectangle x1="0.75" y1="0.75" x2="1.25" y2="1.25" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="332-02" urn="urn:adsk.eagle:package:6810/1" type="box" library_version="1">
+<description>2 Pin - 2mm Dual Row
+Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
+<packageinstances>
+<packageinstance name="332-02"/>
+</packageinstances>
+</package3d>
+<package3d name="332-04" urn="urn:adsk.eagle:package:6809/1" type="box" library_version="1">
+<description>4 Pin - 2mm Dual Row
+Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
+<packageinstances>
+<packageinstance name="332-04"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MV" urn="urn:adsk.eagle:symbol:6783/1" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M" urn="urn:adsk.eagle:symbol:6785/1" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="332-02" urn="urn:adsk.eagle:component:6832/1" prefix="X" library_version="1">
+<description>&lt;b&gt;2 Pin - 2mm Dual Row&lt;/b&gt;&lt;p&gt;
+Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
+<gates>
+<gate name="-1" symbol="MV" x="-10.16" y="0" addlevel="always"/>
+<gate name="-2" symbol="MV" x="10.16" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="332-02">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6810/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="332-04" urn="urn:adsk.eagle:component:6833/1" prefix="X" library_version="1">
+<description>&lt;b&gt;4 Pin - 2mm Dual Row&lt;/b&gt;&lt;p&gt;
+Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
+<gates>
+<gate name="-1" symbol="MV" x="-10.16" y="0" addlevel="always"/>
+<gate name="-2" symbol="MV" x="10.16" y="0" addlevel="always"/>
+<gate name="-3" symbol="M" x="-10.16" y="-2.54" addlevel="always"/>
+<gate name="-4" symbol="M" x="10.16" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="332-04">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6809/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -810,11 +940,17 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="B1" library="SparkFun-Boards" library_urn="urn:adsk.eagle:library:509" deviceset="ARDUINO_UNO_R3" device="NO_HOLES" package3d_urn="urn:adsk.eagle:package:37331/1"/>
+<part name="X1" library="con-garry" library_urn="urn:adsk.eagle:library:147" deviceset="332-02" device="" package3d_urn="urn:adsk.eagle:package:6810/1"/>
+<part name="X2" library="con-garry" library_urn="urn:adsk.eagle:library:147" deviceset="332-02" device="" package3d_urn="urn:adsk.eagle:package:6810/1"/>
+<part name="X3" library="con-garry" library_urn="urn:adsk.eagle:library:147" deviceset="332-04" device="" package3d_urn="urn:adsk.eagle:package:6809/1"/>
+<part name="X4" library="con-garry" library_urn="urn:adsk.eagle:library:147" deviceset="332-04" device="" package3d_urn="urn:adsk.eagle:package:6809/1"/>
+<part name="X5" library="con-garry" library_urn="urn:adsk.eagle:library:147" deviceset="332-04" device="" package3d_urn="urn:adsk.eagle:package:6809/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="15.24" y="170.18" size="6.4516" layer="91">sensori di luce</text>
+<text x="17.78" y="88.9" size="6.4516" layer="91">Bumper</text>
 </plain>
 <instances>
 <instance part="PH1" gate="G$1" x="5.08" y="134.62" smashed="yes">
@@ -860,6 +996,64 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <instance part="B1" gate="G$1" x="157.48" y="58.42" smashed="yes">
 <attribute name="NAME" x="147.828" y="89.662" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="147.32" y="27.686" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="X1" gate="-1" x="-5.08" y="78.74" smashed="yes">
+<attribute name="NAME" x="-2.54" y="77.978" size="1.524" layer="95"/>
+<attribute name="VALUE" x="-5.842" y="80.137" size="1.778" layer="96"/>
+</instance>
+<instance part="X1" gate="-2" x="15.24" y="78.74" smashed="yes">
+<attribute name="NAME" x="17.78" y="77.978" size="1.524" layer="95"/>
+<attribute name="VALUE" x="14.478" y="80.137" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="-1" x="33.02" y="78.74" smashed="yes">
+<attribute name="NAME" x="35.56" y="80.518" size="1.524" layer="95"/>
+<attribute name="VALUE" x="32.258" y="80.137" size="1.778" layer="96"/>
+</instance>
+<instance part="X2" gate="-2" x="55.88" y="78.74" smashed="yes">
+<attribute name="NAME" x="58.42" y="77.978" size="1.524" layer="95"/>
+<attribute name="VALUE" x="55.118" y="80.137" size="1.778" layer="96"/>
+</instance>
+<instance part="X3" gate="-1" x="154.94" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="155.702" y="175.26" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.543" y="171.958" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X3" gate="-2" x="165.1" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="165.862" y="175.26" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="163.703" y="171.958" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X3" gate="-3" x="149.86" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="153.162" y="172.72" size="1.524" layer="95" rot="R270"/>
+</instance>
+<instance part="X3" gate="-4" x="160.02" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="160.782" y="175.26" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="X4" gate="-1" x="193.04" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="193.802" y="175.26" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="191.643" y="171.958" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X4" gate="-2" x="203.2" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="203.962" y="175.26" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="201.803" y="171.958" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X4" gate="-3" x="187.96" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="191.262" y="172.72" size="1.524" layer="95" rot="R270"/>
+</instance>
+<instance part="X4" gate="-4" x="198.12" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="198.882" y="175.26" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="X5" gate="-1" x="175.26" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="176.022" y="152.4" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="173.863" y="149.098" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X5" gate="-2" x="185.42" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="186.182" y="152.4" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="184.023" y="149.098" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="X5" gate="-3" x="170.18" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="173.482" y="149.86" size="1.524" layer="95" rot="R270"/>
+</instance>
+<instance part="X5" gate="-4" x="180.34" y="149.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="181.102" y="152.4" size="1.524" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -971,6 +1165,28 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 <wire x1="86.36" y1="129.54" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="86.36" y="124.46" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="-7.62" y1="78.74" x2="-7.62" y2="71.12" width="0.1524" layer="91"/>
+<label x="-7.62" y="71.12" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="GND@2"/>
+<wire x1="144.78" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
+<label x="142.24" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-2" pin="S"/>
+<wire x1="165.1" y1="170.18" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
+<label x="165.1" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="165.1" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="203.2" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-2" pin="S"/>
+<wire x1="185.42" y1="147.32" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
+<label x="185.42" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -1001,10 +1217,154 @@ Arduino Uno R3 Compatible Footprint. Matches PCB size of the original board.
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="-7.62" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91" style="longdash"/>
 <wire x1="106.68" y1="111.76" x2="106.68" y2="182.88" width="0.1524" layer="91" style="longdash"/>
-<wire x1="106.68" y1="182.88" x2="-7.62" y2="182.88" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-7.62" y1="182.88" x2="-7.62" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="106.68" y1="182.88" x2="-5.08" y2="182.88" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="182.88" x2="-5.08" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-5.08" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="35.56" x2="-27.94" y2="35.56" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-27.94" y1="106.68" x2="-27.94" y2="35.56" width="0.1524" layer="91" style="longdash"/>
+<wire x1="86.36" y1="106.68" x2="-27.94" y2="106.68" width="0.1524" layer="91" style="longdash"/>
+<wire x1="86.36" y1="106.68" x2="-27.94" y2="106.68" width="0.1524" layer="91" style="longdash"/>
+<wire x1="86.36" y1="106.68" x2="86.36" y2="35.56" width="0.1524" layer="91" style="longdash"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="182.88" x2="139.7" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="139.7" y1="182.88" x2="213.36" y2="182.88" width="0.1524" layer="91" style="longdash"/>
+<wire x1="213.36" y1="182.88" x2="213.36" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<wire x1="139.7" y1="111.76" x2="213.36" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+</segment>
+</net>
+<net name="GNG" class="0">
+<segment>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="30.48" y1="78.74" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<label x="30.48" y="71.12" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D1" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D1"/>
+<wire x1="170.18" y1="83.82" x2="172.72" y2="83.82" width="0.1524" layer="91"/>
+<label x="172.72" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="12.7" y1="78.74" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
+<label x="12.7" y="71.12" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="D2"/>
+<wire x1="170.18" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<label x="172.72" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="53.34" y1="78.74" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<label x="53.34" y="71.12" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="D3" class="0">
+<segment>
+<pinref part="X3" gate="-1" pin="S"/>
+<wire x1="154.94" y1="170.18" x2="154.94" y2="167.64" width="0.1524" layer="91"/>
+<label x="154.94" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="*D3"/>
+<wire x1="170.18" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
+<label x="172.72" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D4" class="0">
+<segment>
+<pinref part="X3" gate="-4" pin="S"/>
+<wire x1="160.02" y1="170.18" x2="160.02" y2="167.64" width="0.1524" layer="91"/>
+<label x="160.02" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="D4"/>
+<wire x1="170.18" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
+<label x="172.72" y="76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D5" class="0">
+<segment>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="193.04" y1="170.18" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
+<label x="193.04" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="*D5"/>
+<wire x1="170.18" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
+<label x="172.72" y="73.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D6" class="0">
+<segment>
+<pinref part="X4" gate="-4" pin="S"/>
+<wire x1="198.12" y1="170.18" x2="198.12" y2="167.64" width="0.1524" layer="91"/>
+<label x="198.12" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="*D6"/>
+<wire x1="170.18" y1="71.12" x2="172.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="172.72" y="71.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="203.2" y1="170.18" x2="203.2" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D7" class="0">
+<segment>
+<pinref part="X5" gate="-1" pin="S"/>
+<wire x1="175.26" y1="147.32" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<label x="175.26" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="D7"/>
+<wire x1="170.18" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<label x="172.72" y="68.58" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D8" class="0">
+<segment>
+<pinref part="X5" gate="-4" pin="S"/>
+<wire x1="180.34" y1="147.32" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
+<label x="180.34" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="D8"/>
+<wire x1="170.18" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="172.72" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="5V"/>
+<wire x1="144.78" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="142.24" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-3" pin="S"/>
+<wire x1="149.86" y1="170.18" x2="149.86" y2="167.64" width="0.1524" layer="91"/>
+<label x="149.86" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-3" pin="S"/>
+<wire x1="187.96" y1="170.18" x2="187.96" y2="167.64" width="0.1524" layer="91"/>
+<label x="187.96" y="167.64" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-3" pin="S"/>
+<wire x1="170.18" y1="147.32" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
+<label x="170.18" y="144.78" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
